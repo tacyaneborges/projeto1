@@ -1,0 +1,58 @@
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <section class="conteudo">
+                
+            <!-- Código omitido -->
+                
+            <div class="parametro">
+                <h3 class="parametro-titulo">Personalize sua senha</h3>
+                <div class="parametro-coluna__senha">
+                    <div class="parametro-senha">
+                        <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                        <div class="parametro-senha-botoes">
+                            <button class="parametro-senha__botao">-</button>
+                            <p class="parametro-senha__texto">12</p>
+                            <button class="parametro-senha__botao">+</button>
+                        </div>
+                    </div>               
+                    
+                   
+                                
+            </div>
+        </section>
+        <script src="main.js"></script>
+
+    
+    
+</body>
+</html>
+
+main
+
+botoes[0].onclick = diminuiTamanho;
+botoes[1].onclick = aumentaTamanho;
+
+function aumentaTamanho() {
+  if (tamanhoSenha < 20) {
+          // tamanhoSenha = tamanhoSenha + 1;
+          tamanhoSenha++;
+  }
+  numeroSenha.textContent = tamanhoSenha;
+}
+
+function diminuiTamanho() {
+  if (tamanhoSenha > 1) {
+      // tamanhoSenha = tamanhoSenha - 1;
+      tamanhoSenha--;
+  }
+  numeroSenha.textContent = tamanhoSenha;
+}
