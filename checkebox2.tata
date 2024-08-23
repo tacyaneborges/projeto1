@@ -1,0 +1,72 @@
+index
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <input name="senha" type="text" id="campo-senha" readonly>
+    <title>Document</title>
+</head>
+<body>
+
+
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Força da senha</h4>
+    <div class="barra"></div>
+    <div class="forca fraca"></div>
+    <div class="parametro-senha-textos">
+    </div>
+    
+
+<input name="senha" type="text" id="campo-senha" readonly>
+
+
+</body>
+</html>
+
+  main
+
+  console.log(alfabeto);
+let senha = '';
+for (let i = 0; i < tamanhoSenha; i++) {
+    let numeroAleatorio = Math.random() * alfabeto.length;
+    numeroAleatorio = Math.floor(numeroAleatorio);
+    senha = senha + alfabeto numeroAleatorio];
+}
+camposenha.value = senha;
+
+let senha = '';
+for (let i = 0; i < tamanhoSenha; i++) {
+    let numeroAleatorio = Math.random() * alfabeto.length;
+    numeroAleatorio = Math.floor(numeroAleatorio);
+    senha = senha + alfabeto numeroAleatorio];
+}
+camposenha.value = senha;
+
+const numeroSenha = document.querySelector('.parametro-senha_texto');
+let tamanhoSenha 5;  
+numerosenha.textContent = tamanhosenha;
+
+const numeroSenha = document.querySelector('.parametro-senha__texto');
+let tamanhoSenha = 12;
+numeroSenha.textContent = tamanhoSenha;
+const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
+const letrasMinusculas = 'abcdefghijklmnopqrstuvxywz';
+const numeros = '0123456789';
+const simbolos = '!@%*?';
+const botoes = document.querySelectorAll('.parametro-senha__botao');
+const campoSenha = document.querySelector('#campo-senha');
+const checkbox = document.querySelectorAll('.checkbox');
+
+function classificaSenha(){
+    forcaSenha.classList.remove('fraca','media','forte');
+        if (tamanhoSenha > 11){
+           forcaSenha.classList.add('forte');
+        } else if (tamanhoSenha > 5 && tamanhoSenha < 12) {
+            forcaSenha.classList.add('media');
+        } else if (tamanhoSenha <= 5){
+            forcaSenha.classList.add('fraca');
+        }
+}   
