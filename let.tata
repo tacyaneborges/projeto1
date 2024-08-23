@@ -1,0 +1,44 @@
+index
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <input name="senha" type="text" id="campo-senha" readonly>
+   
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="entropia"></p>
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Força da senha</h4>
+    <div class="barra"></div>
+    <div class="forca fraca"></div>
+    <div class="parametro-senha-textos">
+    </div>
+    
+
+<input name="senha" type="text" id="campo-senha" readonly>
+
+</body>
+</html>
+
+main
+
+function classificaSenha(tamanhoAlfabeto) {
+    if (entropia > 57){
+        forcaSenha.classList.add('forte');
+    } else if (entropia > 35 && entropia < 57 ) {
+        forcaSenha.classList.add('media');
+    } else if (entropia <= 35){
+        forcaSenha.classList.add('fraca');
+    }
+}
+
+function geraSenha() {
+    let alfabeto = '';
+    classificaSenha(alfabeto.length);
+}
