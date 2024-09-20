@@ -1,0 +1,43 @@
+index
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script type="module" src="js/aleatorio.js"></script>
+    <script type="module" src="js/perguntas.js"></script>
+    <script type="module" src="js/script.js"></script>
+    
+</body>
+</html>
+
+script
+
+function aleatorio (lista){
+    const posicao = Math.floor(Math.random()* lista.length);
+    return lista[posicao];
+}
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+    historiaFinal += afirmacoes + " ";
+    atual++;
+    mostraPergunta();
+}
+
+export const perguntas = [
+ 
+    ]
+
+    export function aleatorio (lista){
+      
+        }
+
+        import {aleatorio} from './aleatorio.js';
+        import {perguntas} from './perguntas.js';
+
