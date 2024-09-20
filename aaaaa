@@ -1,0 +1,34 @@
+index
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="caixa-resultado">
+        <p class="texto-resultado"></p>
+        <buttton class="novamente-btn"></button>
+</div>
+    
+</body>
+</html>
+
+script
+
+const botaoJogarNovamente = document.querySelector(".novamente-btn");
+function jogaNovamente(){
+    atual = 0;
+    historiaFinal = "";
+    mostraPergunta();
+}
+function mostraResultado() {
+    caixaPerguntas.textContent = "Em 2049...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+    botaoJogarNovamente.addEventListener("click", jogaNovamente());
+}
